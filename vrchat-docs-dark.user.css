@@ -1,3 +1,14 @@
+/* ==UserStyle==
+@name        VRChat Docs Dark
+@namespace   orels1
+@version     4.2.186
+@homepageURL https://github.com/orels1/stylish
+@updateURL   https://github.com/orels1/stylish/raw/master/vrchat-docs-dark.user.css
+@license     MIT
+@author      orels1
+
+==/UserStyle== */
+
 @-moz-document domain("docs.vrchat.com") {
   body {
     --white: #fcfcfc;
