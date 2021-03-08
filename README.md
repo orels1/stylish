@@ -2,4 +2,4 @@
 
 ## Click to install themes
 
-- [VRChat Docs](https://github.com/orels1/stylish/raw/master/vrchat-docs-dark.user.css)
+- [VRChat Docs](https://orels1.github.io/stylish/vrchat-docs-dark.user.css)
