@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        VRChat Docs Dark
 @namespace   orels1
-@version     1.0.0
+@version     1.1.0
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/vrchat-docs-dark.user.css
 @license     MIT
@@ -354,4 +354,122 @@
   table tr td:hover, .nextSteps table tr td:hover {
     background: #3c3c3c;
   }
+  
+  /* EDITOR */
+  
+  body.hub-suggested-edits #hub-header #hub-subheader {
+    background-color: var(--yellow) !important;
+  }
+  
+  #hub-header #hub-subheader #header-bottom-suggested-edits  {
+    padding-top: 7px;
+  }
+  
+  #hub-header #hub-subheader #header-bottom-suggested-edits .hub-suggested-edits-cancel {
+    color: #131313;
+  }
+  
+  #hub-header #hub-subheader #header-bottom-suggested-edits button.btn.btn-default {
+    border: none;
+    background-color: #222222;
+    color: var(--white);
+    transition: background-color 300ms ease;
+  }
+  
+  #hub-header #hub-subheader #header-bottom-suggested-edits button.btn.btn-default:hover {
+    background-color: #39383A; 
+  }
+  
+  section#hub-content #content-suggested-edits input,
+  section#hub-content #content-suggested-edits .hub-se-form-control,
+  section#hub-content #content-suggested-edits .hub-se-magic .blocks-parent {
+    background-color: #363537;
+    color: var(--white);
+    border: none;
+  }
+  
+  section#hub-content #content-suggested-edits .hub-se-form-control.hub-se-title {
+    color: var(--blue);
+  }
+  
+  section#hub-content #content-suggested-edits textarea {
+    color: var(--white);
+  }
+  
+  section#hub-content #content-suggested-edits .block.type-textarea .outline {
+    border-color: #4b494d;
+    color: var(--white);
+    transition: background-color 300ms ease;
+    border-radius: 3px;
+  }
+  
+  section#hub-content #content-suggested-edits .block.type-textarea .outline:hover {
+    background-color: #4b494d;
+  }
+  
+  
+  section#hub-content #content-suggested-edits .well {
+    background-color: #4b494d;
+    border: none;
+  }
+  
+  section#hub-content #content-suggested-edits .well .filepicker .fp {
+    background-color: #4b494d;
+  }
+  
+  section#hub-content #content-suggested-edits .well textarea {
+    background-color: #79787b;
+    border: none;
+  }
+  
+  .blocks-parent .block-edit-callout .block-callout-icons .fa {
+    color: var(--white);
+  }
+  
+  section#hub-content #content-suggested-edits .block-edit-callout.type-danger {
+    background-color: hsla(345deg, 100%, 69%, 20%);
+    border-color: var(--red);
+  }
+  
+  section#hub-content #content-suggested-edits .block-edit-callout.type-danger {
+    background-color: hsla(345deg, 100%, 69%, 20%);
+    border-color: var(--red);
+  }
+  
+  section#hub-content #content-suggested-edits .block-edit-callout.type-warning {
+    background-color: hsla(45deg, 60%, 70%, 20%);
+    border-color: var(--yellow);
+  }
+  
+  section#hub-content #content-suggested-edits .block-edit-callout.type-info {
+    background-color: hsla(186deg, 71%, 69%, 20%);
+    border-color: var(--blue);
+  }
+  
+  section#hub-content #content-suggested-edits .block-edit-callout.type-success {
+    background-color: hsla(90deg, 59%, 66%, 20%);
+    border-color: var(--green);
+  }
+  
+  section#hub-content #content-suggested-edits dragbox {
+    right: 15px;
+  }
+  
+  section#hub-content #content-suggested-edits dragbox ul li,
+  section#hub-content #content-suggested-edits dragbox ul li a {
+    background-color: #363537;
+    border: none;
+    transition: background-color 300ms ease;
+  }
+  
+  section#hub-content #content-suggested-edits dragbox ul li:hover,
+  section#hub-content #content-suggested-edits dragbox ul li a:hover {
+    background-color: #4d4c4f;
+  }
+  
+  .block.section .block-options>.block-option {
+    background-color: #535255;
+  }
+  
+  
   }
