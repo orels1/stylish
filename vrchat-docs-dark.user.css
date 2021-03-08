@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        VRChat Docs Dark
 @namespace   orels1
-@version     1.1.0
+@version     1.1.1
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/vrchat-docs-dark.user.css
 @license     MIT
@@ -222,15 +222,18 @@
     ;
   }
   
-  #hub-container #hub-content h1 {
+  #hub-container #hub-content h1,
+  #hub-container #hub-content h1 a {
     color: var(--blue);
   }
   
-  #hub-container #hub-content h2 {
+  #hub-container #hub-content h2,
+  #hub-container #hub-content h2 a {
     color: var(--yellow);
   }
   
-  #hub-container #hub-content h3 {
+  #hub-container #hub-content h3,
+  #hub-container #hub-content h3 a {
     /* yellow desaturated */
     color: hsl(45deg 60% 70%)
   }
