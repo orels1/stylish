@@ -1,0 +1,144 @@
+/* ==UserStyle==
+@name        GitBook Dark
+@namespace   orels1
+@version     1.0.0
+@homepageURL https://github.com/orels1/stylish
+@updateURL   https://orels1.github.io/stylish/gitbook-dark.user.css
+@license     MIT
+@author      orels1
+==/UserStyle== */
+
+@-moz-document domain("gitbook.com"), domain("ut.orels.sh") {
+  /* BASE */
+  body div[class*="body-"]:first-child {
+    --white: #fcfcfc;
+    --red: #FF6188;
+    --orange: #FC9867;
+    --yellow: #FFD866;
+    --green: #A9DC76;
+    --blue: #78DCE8;
+    --purple: #AB9DF2;
+    
+    --yellow-t: hsla(45deg, 60%, 70%, 20%);
+    --red-t: hsla(345deg, 100%, 69%, 20%);
+    --blue-t: hsla(186deg, 71%, 69%, 20%);
+    --green-t: hsla(90deg, 59%, 66%, 20%);
+  }
+  
+  body div[class*="body-"]:first-child {
+    filter: invert(1);
+  }
+  
+  body div[class*="body-"]:first-child div[class*="wholeContentPage-"] {
+    background-color:rgb(234, 234, 234)
+  }
+  
+  body div[class*="body-"]:first-child div[class*="header-"] {
+    box-shadow: none;
+  }
+  
+  body div[class*="body-"]:first-child div[class*="header-"] img {
+    filter: invert(0);
+  }
+  
+  /* Un-invert content */
+  body div[class*="body-"]:first-child img,
+  body div[class*="body-"]:first-child iframe,
+  body div[class*="body-"]:first-child pre {
+    filter: invert(1);
+  }
+  
+  /* TYPOGRAPHY */
+  body div[class*="body-"]:first-child h1,
+  body div[class*="body-"]:first-child textarea[class*="pageTitleInput"] {
+    color: var(--blue);
+    filter: invert(1);
+  }
+  
+  body div[class*="body-"]:first-child h2,
+  body div[class*="body-"]:first-child textarea[class*="blockHeading2"] {
+    color: var(--yellow);
+    filter: invert(1);
+  }
+  
+  body div[class*="body-"]:first-child h3,
+  body div[class*="body-"]:first-child textarea[class*="blockHeading3"] {
+    color: var(--yellow);
+    filter: invert(1);
+  }
+  
+  body div[class*="body-"]:first-child a[class^="link"] {
+    color: var(--blue) !important;
+    filter: invert(1);
+  }
+  
+  body div[class*="body-"]:first-child a code,
+  body div[class*="body-"]:first-child blockquote code {
+    background-color: #2D2C2D; 
+    color: var(--blue);
+    filter: invert(0);
+  }
+  
+  body div[class*="body-"]:first-child code {
+    filter: invert(1);
+    background-color: #2D2C2D; 
+    color: var(--white);
+  }
+  
+  /* HINTS */
+  body div[class*="body-"]:first-child div[class*="blockHint-"] {
+    filter: invert(1);
+    color: var(--white);
+  }
+  
+  /* Warning */
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(247, 125, 5);"] {
+    border-color: var(--orange) !important;
+    background-color: var(--yellow-t);
+  }
+  
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(247, 125, 5);"] svg {
+    color: var(--orange) !important;
+  }
+  
+  /* Info */
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(56, 132, 255);"] {
+    border-color: var(--blue) !important;
+    background-color: var(--blue-t);
+  }
+  
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(56, 132, 255);"] svg {
+    color: var(--blue) !important;
+  }
+  
+  /* Success */
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(38, 203, 124);"] {
+    border-color: var(--green) !important;
+    background-color: var(--green-t);
+  }
+  
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(38, 203, 124);"] svg {
+    color: var(--green) !important;
+  }
+  
+  /* Error */
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(255, 70, 66);"] {
+    border-color: var(--red) !important;
+    background-color: var(--red-t);
+  }
+  
+  body div[class*="body-"]:first-child div[class*="blockHint-"][style^="border-color: rgb(255, 70, 66);"] svg {
+    color: var(--red) !important;
+  }
+  
+  body div[class*="body-"]:first-child div[class*="blockHint-"] code {
+    background-color: #2D2C2D;
+    color: #F0F1FF;
+    filter: invert(0);
+  }
+  
+  body div[class*="body-"]:first-child div[class*="blockHint-"] a[class^="link"] {
+    color: var(--blue) !important;
+    filter: invert(0);
+  }
+  }

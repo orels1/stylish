@@ -5,6 +5,7 @@ To use these themes - install [Stylus for Firefox](https://addons.mozilla.org/en
 ## Click to install themes
 
 - [VRChat Docs](https://orels1.github.io/stylish/vrchat-docs-dark.user.css)
+- [GitBook](https://orels1.github.io/stylish/gitbook-dark.user.css)
 
 ## Theme Previews
 
