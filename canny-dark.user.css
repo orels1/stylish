@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name        Canny Dark
 @namespace   orels1
-@version     1.0.0
+@version     1.0.1
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/canny-dark.user.css
 @license     MIT
 @author      orels1
 ==/UserStyle== */
 
-@-moz-document regexp(".*canny.io/.*") {
+@-moz-document regexp(".*canny.io/.*"), domain("feedback.vrchat.com") {
   @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
   
   body {
