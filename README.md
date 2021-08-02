@@ -6,9 +6,14 @@ To use these themes - install [Stylus for Firefox](https://addons.mozilla.org/en
 
 - [VRChat Docs](https://orels1.github.io/stylish/vrchat-docs-dark.user.css)
 - [GitBook](https://orels1.github.io/stylish/gitbook-dark.user.css)
+- [Canny](https://orels1.github.io/stylish/canny-dark.user.css)
 
 ## Theme Previews
 
 ### VRChat Docs
 
 ![vrcDocs](https://cdn.vrchat.sh/stylish/gh-theme-preview.png)
+
+### Canny
+
+![canny](https://cdn.vrchat.sh/stylish/canny-theme-preview.png)
