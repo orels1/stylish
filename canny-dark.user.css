@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Canny Dark
 @namespace   orels1
-@version     1.0.1
+@version     1.0.2
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/canny-dark.user.css
 @license     MIT
@@ -124,7 +124,7 @@
   
   .notificationsMenuPortal .notificationsDropdown  .notifications .notification span {
     color: var(--white);
-    font-weight: 100;
+    font-weight: 300;
   }
   
   .notificationsMenuPortal .notificationsDropdown  .notifications .notification .timestamp {
@@ -249,7 +249,7 @@
   
   .contentContainer .mainContainer .postContainer .postHeader .statusTitle {
     color: var(--yellow);
-    font-weight: 100;
+    font-weight: 300;
   }
   
   .contentContainer .mainContainer .postContainer .postContent .postAuthor .userLockup .userInfo .name {
@@ -657,7 +657,7 @@
   
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postLink .body .postTitle {
     color: var(--yellow);
-    font-weight: 100;
+    font-weight: 300;
   }
   
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postLink .body .postDetails {
