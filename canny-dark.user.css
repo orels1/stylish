@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Canny Dark
 @namespace   orels1
-@version     1.0.2
+@version     1.0.3
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/canny-dark.user.css
 @license     MIT
@@ -373,6 +373,16 @@
   
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line a:hover {
     opacity: 1;
+  }
+
+  .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ol li,
+  .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ul li {
+    color: var(--light);
+  }
+  
+  .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ol li::marker,
+  .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ul li::marker {
+    color: var(--yellow);
   }
   
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .multiLineCodeBlock,
