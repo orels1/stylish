@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Canny Dark
 @namespace   orels1
-@version     1.0.3
+@version     1.0.4
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/canny-dark.user.css
 @license     MIT
@@ -354,10 +354,16 @@
     color: var(--light);
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .topContainer .right .pinnedLabel {
+    color: var(--red) !important;
+  }
+  
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line {
     color: var(--light);
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line .mention,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line .mention {
     color: var(--white);
     background-color: var(--red) !important;
@@ -365,36 +371,46 @@
     padding: 1px 5px;
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line a,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line a {
     color: var(--blue) !important;
     opacity: 0.8;
     transition: opacity 300ms ease;
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line a:hover,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line a:hover {
     opacity: 1;
   }
 
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ol li,
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ul li,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ol li,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ul li {
     color: var(--light);
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ol li::marker,
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ul li::marker,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ol li::marker,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ul li::marker {
     color: var(--yellow);
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .multiLineCodeBlock,
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .inlineCodeBlock,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .multiLineCodeBlock,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .inlineCodeBlock {
     background-color: var(--bg);
     font-family: 'Fira Mono', monospace;
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .multiLineCodeBlock .line,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .multiLineCodeBlock .line {
     color: var(--white);
   }
   
+  .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .inlineCodeBlock,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .inlineCodeBlock {
     color: var(--orange);
   }
