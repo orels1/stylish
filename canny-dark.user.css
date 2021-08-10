@@ -1,209 +1,205 @@
 /* ==UserStyle==
 @name        Canny Dark
 @namespace   orels1
-@version     1.0.4
+@version     1.0.5
 @homepageURL https://github.com/orels1/stylish
 @updateURL   https://orels1.github.io/stylish/canny-dark.user.css
 @license     MIT
 @author      orels1
 ==/UserStyle== */
-
-@-moz-document regexp(".*canny.io/.*"), domain("feedback.vrchat.com") {
+@-moz-document regexp(".*canny.io/.*"),
+domain("feedback.vrchat.com") {
   @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-  
+
   body {
-      --white: #fcfcfc;
-      --red: #FF6188;
-      --orange: #FC9867;
-      --lOrange: hsla(45deg, 60%, 70%, 20%);
-      --yellow: #FFD866;
-      --green: #A9DC76;
-      --blue: #78DCE8;
-      --lBlue: hsla(186deg, 71%, 69%, 20%);
-      --purple: #AB9DF2;
-      --bg: #222222;
-      --darkBg: #191919;
-      --vDarkBg: #131313;
-      --lightBg: #39383A;
-      --light: #69676C;
-    
+    --white: #fcfcfc;
+    --red: #FF6188;
+    --orange: #FC9867;
+    --lOrange: hsla(45deg, 60%, 70%, 20%);
+    --yellow: #FFD866;
+    --green: #A9DC76;
+    --blue: #78DCE8;
+    --lBlue: hsla(186deg, 71%, 69%, 20%);
+    --purple: #AB9DF2;
+    --bg: #222222;
+    --darkBg: #191919;
+    --vDarkBg: #131313;
+    --lightBg: #39383A;
+    --light: #69676C;
+
     background: var(--bg);
   }
-  
+
   html {
     background: var(--bg);
   }
-  
+
   /* NAVIGATION */
-  
   .publicNav {
     background-color: var(--vDarkBg);
     border-color: var(--lightBg);
   }
-  
+
   .publicNav .companyLogo {
     filter: invert(1);
   }
-  
-  
+
+
   .publicNav .companyName {
     color: var(--white);
   }
-  
+
   .publicNav .secondaryNav .link .icon {
     background: var(--light) !important;
   }
-  
+
   .publicNav .secondaryNav .link .icon img {
     filter: grayscale(100%) brightness(0.08);
   }
-  
+
   .publicNav .secondaryNav .link .text {
     color: var(--light);
   }
-  
-  
+
+
   .publicNav .secondaryNav .link .publicNavBoardDropdown .split .optionContent > div {
     border-color: var(--light) !important;
   }
-  
+
   .publicNav .secondaryNav .link .publicNavBoardDropdown .split .icon-chevron-down::before {
     color: var(--light);
   }
-  
+
   .dropdownPortal.publicNavBoardDropdown.boardDropdownSelector .dropdown {
     background-color: var(--bg);
   }
-  
+
   .dropdownPortal.publicNavBoardDropdown.boardDropdownSelector .dropdown .option:hover {
     background-color: var(--darkBg);
   }
-  
-  .dropdownPortal.publicNavBoardDropdown.boardDropdownSelector .dropdown .option .optionContent  {
+
+  .dropdownPortal.publicNavBoardDropdown.boardDropdownSelector .dropdown .option .optionContent {
     color: var(--light);
   }
-  
-  .dropdownPortal.publicNavBoardDropdown.boardDropdownSelector .dropdown .option .optionContent  .count {
+
+  .dropdownPortal.publicNavBoardDropdown.boardDropdownSelector .dropdown .option .optionContent .count {
     background-color: var(--yellow);
     color: var(--dark);
   }
-  
+
   /* NOTIFICATIONS */
-  
   .notificationsMenuPortal .notificationsDropdown {
     background-color: var(--bg);
   }
-  
+
   .notificationsMenuPortal .notificationsDropdown:after {
     border-color: transparent transparent var(--bg) var(--bg);
   }
-  
+
   .notificationsMenuPortal .notificationsDropdown .notificationsDropdownHeader {
     border-color: var(--vDarkBg);
   }
-  
+
   .notificationsMenuPortal .notificationsDropdown .notificationsDropdownHeader h3 {
     color: var(--light);
   }
-  
+
   .notificationsMenuPortal .notificationsDropdown .notificationsDropdownHeader span {
     color: var(--blue) !important;
   }
-  
+
   .notificationsMenuPortal .notificationsDropdown .notificationsDropdownFooter {
-     border-color: var(--vDarkBg);
+    border-color: var(--vDarkBg);
   }
-  
+
   .notificationsMenuPortal .notificationsDropdown .notificationsDropdownFooter a {
     color: var(--light);
   }
-  
-  .notificationsMenuPortal .notificationsDropdown  .notifications .notification {
+
+  .notificationsMenuPortal .notificationsDropdown .notifications .notification {
     border-color: var(--vDarkBg);
   }
-  
-  .notificationsMenuPortal .notificationsDropdown  .notifications .notification span {
+
+  .notificationsMenuPortal .notificationsDropdown .notifications .notification span {
     color: var(--white);
     font-weight: 300;
   }
-  
-  .notificationsMenuPortal .notificationsDropdown  .notifications .notification .timestamp {
+
+  .notificationsMenuPortal .notificationsDropdown .notifications .notification .timestamp {
     color: var(--light);
     transition: color 300ms ease;
   }
-  
-  .notificationsMenuPortal .notificationsDropdown  .notifications .notification:hover {
+
+  .notificationsMenuPortal .notificationsDropdown .notifications .notification:hover {
     background-color: var(--lBlue);
   }
-  
-  .notificationsMenuPortal .notificationsDropdown  .notifications .notification:hover .timestamp {
+
+  .notificationsMenuPortal .notificationsDropdown .notifications .notification:hover .timestamp {
     color: var(--white);
   }
-  
+
   /* ACCOUNT DROPDOWN */
-  
   .adminNavAccountMenuPortal .menuItems {
     background-color: var(--bg);
   }
-  
+
   .adminNavAccountMenuPortal .arrow {
     border-color: transparent transparent var(--bg) var(--bg);
   }
-  
+
   .adminNavAccountMenuPortal .menuItems .menuItem {
     color: var(--light);
     transition: color 300ms ease;
   }
-  
+
   .adminNavAccountMenuPortal .menuItems .section .menuItem:hover {
     color: var(--blue);
   }
-  
+
   /* ISSUE PAGE */
-  
   /* SIDEBAR */
   .contentContainer .sidebarContainer .sidebar .sidebarSection {
     background: var(--darkBg);
     border: 0;
   }
-  
+
   .contentContainer .sidebarContainer .sidebar .sidebarSection .voters .uppercaseHeader {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .sidebar .sidebarSection .voters .subdomainPostVoters .users .voter .left .userLockupContainer .userLockup .userInfo .name {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .sidebar .sidebarSection .voters .subdomainPostVoters .users .voter .left .userLockupContainer .userLockup .userInfo .name:contains("orels1") {
     color: var(--blue);
   }
-  
+
   .contentContainer .sidebarContainer .sidebar .sidebarSection .voters .subdomainPostVoters a.more {
     color: var(--blue) !important;
     opacity: 0.6;
     transition: opacity 300ms ease;
   }
-  
+
   .contentContainer .sidebarContainer .sidebar .sidebarSection .voters .subdomainPostVoters a.more:hover {
     opacity: 1;
   }
-  
+
   .contentContainer .sidebarContainer .cannyAttribution {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contentContainer .sidebarContainer .cannyAttribution a {
     color: var(--light);
     transition: color 300ms ease;
   }
-  
+
   .contentContainer .sidebarContainer .cannyAttribution a:hover {
     color: var(--blue);
   }
-  
+
   .contentContainer .sidebarContainer .cannyAttribution::after {
     content: "themed by @orels1_";
     position: relative;
@@ -211,158 +207,195 @@
     font-size: 11px;
     color: var(--lBlue);
   }
-  
+
   .subdomainPostVotersList .subdomainPostVotersContents.card {
     background: var(--darkBg);
     border: none;
   }
-   
+
   .subdomainPostVotersList .subdomainPostVotersContents.card .userLockup .userInfo .name {
     color: var(--light);
   }
-  
+
   /* MAIN CONTENT */
-  
+  .userLockupContainer .userLockup .userInfo .name {
+    color: var(--light);
+  }
+
   .contentContainer .mainContainer .postContainer {
     background-color: var(--darkBg);
     padding: 8px;
   }
-  
-  
+
+
   .contentContainer .mainContainer .postContainer .postHeader .postVotes {
     background-color: var(--bg);
     border: none;
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postHeader .postVotes:hover {
     background-color: var(--green);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postHeader .postVotes .upvote {
     border-bottom-color: var(--light) !important;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postHeader .postVotes .upvote.voted {
     border-bottom-color: var(--blue) !important;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postHeader .statusTitle {
     color: var(--yellow);
     font-weight: 300;
   }
-  
+
+  .postStatus.closed {
+    color: var(--red);
+  }
+
+
+  .postStatus.planned {
+    color: var(--blue);
+  }
+
+  .postStatus.underReview {
+    color: var(--orange);
+  }
+
+  .postStatus.complete {
+    color: var(--green);
+  }
+
+  .postStatus.inProgress {
+    color: var(--purple);
+  }
+
   .contentContainer .mainContainer .postContainer .postContent .postAuthor .userLockup .userInfo .name {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .line {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .line a {
     color: var(--blue) !important;
     opacity: 0.8;
     transition: opacity 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .line a:hover {
     opacity: 1;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .multiLineCodeBlock,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .inlineCodeBlock {
     background-color: var(--bg);
     font-family: 'Fira Mono', monospace;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .multiLineCodeBlock .line {
     color: var(--white);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown .inlineCodeBlock {
     color: var(--orange);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postMenu .timestamp {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postMenu .editLink {
     color: var(--orange);
     transition: opacity 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postContent .postMenu .editLink:hover {
     opacity: 0.6;
   }
-  
+
   /* COMMENTS */
-  
   /* COMMENT INPUT */
-  
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm {
     background: var(--bg);
     border: none;
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .autoResizeTextarea {
     background: var(--bg);
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .autoResizeTextarea textarea::placeholder {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .autoResizeTextarea textarea {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .mentionsTextarea .backdrop .highlights mark.highlight {
     background-color: var(--lOrange) !important;
     padding: 2px;
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .images {
     border-color: var(--vDarkBg);
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .buttonBar {
     border-color: var(--vDarkBg);
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .buttonBar .fileInput .fileInputButton {
     background-color: var(--darkBg);
     transition: background-color 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .buttonBar .fileInput .fileInputButton .icon {
     transition: color 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .buttonBar .fileInput .fileInputButton:hover {
     background-color: var(--vDarkBg);
   }
-  
+
   .contentContainer .mainContainer .postContainer .commentComposer .composerForm .buttonBar .rightContainer .button.blackButton {
     background-color: var(--orange) !important;
   }
-  
+
   /* COMMENT BLOCKS */
-  
   .contentContainer .mainContainer .postContainer .postActivity .userLockup .userInfo .name {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .topContainer .right .pinnedLabel {
     color: var(--red) !important;
   }
-  
+
+  .postMerge .bottomContainer .mergeContainer {
+    border-color: var(--blue);
+    border-width: 2px;
+    border-radius: 6px;
+  }
+
+  .postMerge .bottomContainer .mergeDescription {
+    color: var(--light);
+  }
+
+  .postMerge .bottomContainer .mergeContainer .title {
+    color: var(--yellow);
+  }
+
+  .markdown .line,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line {
     color: var(--light);
   }
-  
+
+  .markdown .line .mention,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line .mention,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line .mention {
     color: var(--white);
@@ -370,33 +403,37 @@
     font-weight: 600;
     padding: 1px 5px;
   }
-  
+
+  .markdown .line a,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line a,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line a {
     color: var(--blue) !important;
     opacity: 0.8;
     transition: opacity 300ms ease;
   }
-  
+
+  .markdown .line a:hover,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .line a:hover,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .line a:hover {
     opacity: 1;
   }
 
+  .markdown ol li,
+  .markdown ul li,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ol li,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ul li,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ol li,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ul li {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ol li::marker,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown ul li::marker,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ol li::marker,
   .contentContainer .mainContainer .postContainer .postContent .postBody .details .markdown ul li::marker {
     color: var(--yellow);
   }
-  
+
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .multiLineCodeBlock,
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .inlineCodeBlock,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .multiLineCodeBlock,
@@ -404,299 +441,294 @@
     background-color: var(--bg);
     font-family: 'Fira Mono', monospace;
   }
-  
+
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .multiLineCodeBlock .line,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .multiLineCodeBlock .line {
     color: var(--white);
   }
-  
+
   .contentContainer .mainContainer .postContainer .mainContent .comment.pinned .value .markdown .inlineCodeBlock,
   .contentContainer .mainContainer .postContainer .postActivity .commentBody .value .markdown .inlineCodeBlock {
     color: var(--orange);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .timestamp {
     color: var(--light);
     transition: opacity 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .timestamp:hover {
     opacity: 0.7;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .menuLink .reply {
     color: var(--light);
     transition: color 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .menuLink .reply:hover {
     color: var(--orange);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .menuLike .count {
     color: var(--light);
     transition: color 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .menuLike:hover .count {
     color: var(--red);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .menuLike .like svg path {
     fill: var(--light);
     stroke: var(--light);
     transition: fill 300ms ease, stroke 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .menuLike:hover .like svg path {
     fill: var(--red) !important;
     stroke: var(--red) !important;
   }
-  
+
+  .overlayWrapper .overlayContainer .overlay,
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .overlayWrapper .overlay {
     background-color: var(--bg);
     border: none;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .overlayWrapper .overlay .likers .liker .userLockup .userInfo .name {
     color: var(--light);
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .overlayWrapper .overlay .likers .more a {
     color: var(--blue);
     transition: opacity 300ms ease;
   }
-  
+
   .contentContainer .mainContainer .postContainer .postActivity .commentMenu .menu .overlayWrapper .overlay .likers .more a:hover {
     opacity: 0.7;
   }
-  
+
   .modalOverlay .modal.commentLikersModal {
     background-color: var(--bg);
   }
-  
+
   .modalOverlay .modal.commentLikersModal .likers .liker .userLockup .userInfo .name {
     color: var(--light);
   }
-  
+
   /* POST STATUS UPDATE */
-  
   .contentContainer .mainContainer .postContainer .postActivity .postStatusChange .update .text span {
     color: var(--light);
   }
-  
+
   /* BOARD GRID PAGE */
-  
   .contentContainer .boardGridContainer .boardGridItem {
     background-color: var(--lBlue);
     color: var(--white);
     transition: background-color 300ms ease, color 300ms ease;
   }
-  
+
   .contentContainer .boardGridContainer .boardGridItem:hover {
     background-color: var(--blue);
     color: var(--darkBg);
   }
-  
+
   .contentContainer .boardGridContainer .boardGridItem .top .posts.uppercaseHeader {
     color: var(--orange);
   }
-  
+
   .contentContainer .boardGridContainer .boardGridItem:hover .top .posts.uppercaseHeader {
     color: var(--darkBg);
   }
-  
+
   /* ISSUE LIST PAGE */
-  
   .contentContainer .sidebarContainer .boardDetails {
     background: var(--darkBg);
     border: 0;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .heading {
     color: var(--orange);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .description {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .description a {
     color: var(--blue) !important;
     opacity: 0.7;
     transition: opacity 300ms ease;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .description a:hover {
     opacity: 1;
   }
-  
+
   /* ISSUE CREATION FORM */
-  
   .contentContainer .sidebarContainer .boardDetails .createPostForm .textInput {
     background-color: var(--bg);
     border: none;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .textInput .inset {
     color: var(--yellow);
     font-weight: 600;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .textInput .inputContainer input {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .textInput .inputContainer input::placeholder {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .autoResizeTextarea {
     background-color: var(--bg);
     border: none;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .autoResizeTextarea .inset {
     color: var(--yellow);
     font-weight: 600;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .autoResizeTextarea .inputContainer textarea {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .autoResizeTextarea .inputContainer textarea::placeholder {
     color: var(--light);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .images {
     border-color: var(--vDarkBg);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .formButtons {
     border-color: var(--vDarkBg);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .formButtons .fileInput .fileInputButton {
     background-color: var(--bg);
     transition: background-color 300ms ease;
     border-color: transparent;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .formButtons .fileInput .fileInputButton .icon {
     transition: color 300ms ease;
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .formButtons .fileInput .fileInputButton:hover {
     background-color: var(--vDarkBg);
   }
-  
+
   .contentContainer .sidebarContainer .boardDetails .createPostForm .formButtons .button.cannyButton {
     background-color: var(--orange) !important;
   }
-  
+
   /* ISSUES LIST */
-  
   .boardHome .contentContainer .mainContainer .postListContainer {
     background-color: var(--darkBg);
     padding: 10px 20px;
     border-radius: 5px;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .suggestedPosts .heading {
     color: var(--light);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .noPosts {
     color: var(--orange);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .searching {
     color: var(--light);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu {
     color: var(--light);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .selectedName {
     color: var(--orange);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .dropdown {
     background-color: var(--bg);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .dropdown .sorts {
     border-color: var(--vDarkBg);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .dropdown .uppercaseHeader {
     color: var(--yellow);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .dropdown .option.selected .dot {
     background-color: var(--orange) !important;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .dropdown .option {
     transition: background-color 300ms ease;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postList .topContainer .postListMenu .selector .dropdown .option:hover {
     background-color: var(--vDarkBg);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListMenu .searchContainer {
     border: none;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListMenu .searchContainer .searchInputContents {
     background-color: var(--bg);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListMenu .searchContainer .searchInputContents .searchInput .inputContainer input {
     color: var(--light);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postVotes {
     background-color: var(--bg);
     border: none;
     color: var(--light);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postVotes:hover {
     background-color: var(--green);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postVotes:hover .upvote.voted {
     border-bottom-color: var(--bh) !important;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postVotes .upvote {
     border-bottom-color: var(--light) !important;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postVotes .upvote.voted {
     border-bottom-color: var(--blue) !important;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postLink .body .postTitle {
     color: var(--yellow);
     font-weight: 300;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postLink .body .postDetails {
     color: var(--light);
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postLink .postCommentCount {
     color: var(--light);
     transition: opacity 300ms ease;
   }
-  
+
   .boardHome .contentContainer .mainContainer .postListContainer .postListItem .postLink .postCommentCount:hover {
     opacity: 0.7;
   }
-  
-  }
+}
