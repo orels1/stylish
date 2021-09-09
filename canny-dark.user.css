@@ -88,10 +88,19 @@ domain("feedback.vrchat.com") {
   }
 
   /* NOTIFICATIONS */
+  
+  .subdomainNotifications .notifications {
+    background-color: var(--darkBg);
+  }
+  
   .notificationsMenuPortal .notificationsDropdown {
     background-color: var(--bg);
   }
 
+  .subdomainNotifications .notificationListBody  {
+    border: none;
+  }
+  
   .notificationsMenuPortal .notificationsDropdown:after {
     border-color: transparent transparent var(--bg) var(--bg);
   }
@@ -116,24 +125,29 @@ domain("feedback.vrchat.com") {
     color: var(--light);
   }
 
+  .subdomainNotifications .notifications .notification,
   .notificationsMenuPortal .notificationsDropdown .notifications .notification {
     border-color: var(--vDarkBg);
   }
 
+  .subdomainNotifications .notifications .notification span,
   .notificationsMenuPortal .notificationsDropdown .notifications .notification span {
     color: var(--white);
     font-weight: 300;
   }
 
+  .subdomainNotifications .notifications .notification .timestamp,
   .notificationsMenuPortal .notificationsDropdown .notifications .notification .timestamp {
     color: var(--light);
     transition: color 300ms ease;
   }
 
+  .subdomainNotifications .notifications .notification:hover,
   .notificationsMenuPortal .notificationsDropdown .notifications .notification:hover {
     background-color: var(--lBlue);
   }
 
+  .subdomainNotifications .notifications .notification:hover timestamp,
   .notificationsMenuPortal .notificationsDropdown .notifications .notification:hover .timestamp {
     color: var(--white);
   }
@@ -154,6 +168,10 @@ domain("feedback.vrchat.com") {
 
   .adminNavAccountMenuPortal .menuItems .section .menuItem:hover {
     color: var(--blue);
+  }
+  
+  .notificationList .loadMoreContainer {
+    background: var(--darkBg);
   }
 
   /* ISSUE PAGE */
